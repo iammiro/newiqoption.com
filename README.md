@@ -1,0 +1,3 @@
+Front end for binary trading platform - newiqoption.com.
+
+Developing with pug.js, scss, postcss, gulp, ets...
