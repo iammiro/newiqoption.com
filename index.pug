@@ -1,0 +1,270 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        title New Iq-option
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css', rel='stylesheet', type='text/css')
+        link(href='css/style-2.css', rel='stylesheet')
+        link(href='css/main.css', rel='stylesheet', type='text/css')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    body
+        section.header.container.welcome
+            .header-nav.container
+                .header-logo
+                    a(href='/')
+                        img(src='img/logo.png')
+                div
+                    button.header-btn Register
+            .wrap
+                .header-start-block
+                    h2.title START TRADING
+                    h2.orange.title BINARY OPTIONS
+                    h2.title RIGHT NOW
+                    h3
+                        span.int 1
+                        span.text Click       
+                        span.int 60
+                        span.text Seconds       
+                        span.int 91%
+                        span.text Profit*
+                    h3.fast-reg-h3 Fast registration:
+                    .header-start-form
+                        form
+                            .input-block
+                                input(type='email', placeholder='Your E-mail', required='')
+                                input(type='password', placeholder='Your Password', required='')
+                            .input-block
+                                button.welcome-btn.btn.btn__full.btn__full--green.btn__full--flat TRY FOR FREE
+                    p.header-start-block-p
+                        | You agree to the  
+                        a(href='') Terms and Conditions
+            .welcome__overlay
+            video#bgvideo.bgvideo(autoplay='', loop='', muted='')
+                source(src='video/platform.mp4', type='video/mp4')
+        section#trade.section.trade
+            .wrap
+                .section__title
+                    h2.title HOW OUR PLATFORM WORKS
+                .section__content
+                    .steps
+                        .steps__item
+                            .steps__num 1.
+                            .steps__text
+                                | Determine the market direction in the near future —
+                                span.green Higher
+                                |  or
+                                span.red Lower
+                                | , than it is now
+                        .steps__item
+                            .steps__num 2.
+                            .steps__text Check the accuracy of your forecast and see your potential profit in seconds.
+                    .trade__platform
+                        img.trade__mockup(src='https://static.iqoption.com/land/start-trading/assets/images/mockup__macbook.png?1478610207299')
+                        .traderoom
+                            .platform
+                                .platform__header
+                                    .asset
+                                        .currency.stocksName EUR/USD
+                                        .profit.activePercent +91%
+                                    .other +
+                                    .balance
+                                        .balance__count
+                                            span.currency $
+                                            span#balance 1000.00
+                                        .balance__type practice account
+                                .platform__chart
+                                    .expiration
+                                        span.expiration__text Deal expires in
+                                        span#expiration.expiration__time
+                                        span.expiration__seconds sec.
+                                    #chart1.chart(data-highcharts-chart='0')
+                                    .platform__warning
+                                        | The features provided by this site may involve operations with high level of risk, and there is a potential for financial loss in their execution.
+                                .platform__sidebar
+                                    .sidebar
+                                        .sidebar__block.amount
+                                            .sidebar__title.amount__title Amount:
+                                            .amount__input
+                                                span.currency $
+                                                input#amount(type='number', min='0', max='5000', value='500', name='email')
+                                            .amount__control
+                                                #amount__del.amount__minus -
+                                                #amount__add.amount__plus +
+                                        .sidebar__block.income
+                                            .sidebar__title.income__title Profit:
+                                            .income__percent
+                                                span#js-percent.activePercent(data-percent='0.91') 91%
+                                            .income__count
+                                                span.currency +$
+                                                input#profit(value='455.91', type='text')
+                                        .sidebar__block.control
+                                            button#btn__call.control__btn.control__btn--call(data-direct='true')
+                                                .control__caption
+                                                    svg.control__icon(width='18px', height='19px')
+                                                        use(href='https://iqoption.com/assets/images/icon.svg#icon_icon__call')
+                                                    .control__text Higher
+                                            button#btn__put.control__btn.control__btn--put(data-direct='false')
+                                                .control__caption
+                                                    svg.control__icon(width='18px', height='19px')
+                                                        use(href='https://iqoption.com/assets/images/icon.svg#icon_icon__put')
+                                                    .control__text Lower
+                            #result.result
+                                .result__close ✕
+                                .result__content
+                                    .result__register
+                                        .result__block
+                                            .result__title Become a trader
+                                            .result__text Try on practice account with real charts
+                                            .result__btn
+                                                a.btn.btn__full.btn__full--orange(href='index.html#register') Start trading now!
+                                    .result__forecast
+                                        .result__block
+                                            .result__title Start trading now!
+                                            .result__text
+                                                | Your profit from investing
+                                                span.currency $
+                                                span#result__bet  500
+                                                |  amounts to
+                                                span.currency $
+                                                span#result__profit 500
+                                            .result__profit
+                                                .result__bubble
+                                                    .bubble
+                                                        .bubble__text Profit
+                                                        .bubble__profit
+                                                            | $
+                                                            span#result__amount 500
+                                    .result__warning
+                                        | The features provided by this site may involve operations with high level of risk, and there is a potential for financial loss in their execution.
+                    .cta
+                        a.cta__btn.btn.btn__full.btn__full--green(href='index.html#register') Try it for free!
+                        .apps
+                            .apps__item.apps__item--appStore
+                                // <img src="../../vendor/images/app/apple/btn__apple--en-1478610207299.png" class="apps__btn apps__btn--appStore">
+                                // img.apps__btn.apps__btn--appStore(src="../assets/images/app/apple/btn__apple--en.png?" + timestamp)
+                            .apps__item.apps__item--googlePlay
+                                // <img src="../../vendor/images/app/google/btn__google--en-1478610207299.png" class="apps__btn apps__btn--googlePlay">
+                                // img.apps__btn.apps__btn--googlePlay(src="../assets/images/app/google/btn__google--en.png?" + timestamp)
+                    .warning
+                        .warning__title
+                            span.warning__colon General Risk Warning:
+                        .warning__text
+                            | Trading operations offered on this website can be considered High-Risk Trading Operations and their execution can be very risky. Purchasing financial instruments or utilising services offered on the website may result in significant losses or even in a total loss of all funds on your account.
+        section.why
+            .wrap
+                .section__title
+                    h2.title
+                        | THAT'S WHY
+                        span.orange  WE ARE THE TRADERS CHOICE
+                        |  №1!
+                .section__content
+                    .why-right-block
+                        img(src='img/mockup__devices.png')
+                    .why-left-block
+                        ul
+                            li
+                                | Free
+                                span.green $1,000
+                                |  Demo Account
+                            li Best tutorial in the industry
+                            li Availability on any device
+                            li A wide range of analysis tools
+                            li More than 70 assets for trading
+                            li A simple and reliable funds withdrawal system
+                .benefits
+                    .benefits-block
+                        .int
+                            | 91% *
+                        .text
+                            | High
+                            br
+                            |                     yield
+                    .benefits-block
+                        .int
+                            | $1
+                        .text
+                            | Minimum
+                            br
+                            | investment
+                    .benefits-block
+                        .int
+                            | 1 min
+                        .text
+                            | Quick
+                            br
+                            |                     deals
+                    .benefits-block
+                        .int
+                            | $10
+                        .text
+                            | Minimum
+                            br
+                            | deposit
+                .why-btn-block
+                    button.why-btn.cta__btn.btn.btn__full.btn__full--green Try it for free!
+        section.payed
+            .wrap
+                .section-title
+                    h3 WE HAVE PAID OUR TRADERS
+                    h3
+                        span.orange $8 404 681 
+                        |  FOR THE 
+                        span.orange LAST
+                    h3
+                        span.orange MONTH
+                .section-content
+                    .payed__item
+                        h5.payed__title
+                            | 120
+                        h5.payed__text
+                            | Countries
+                    .payed__item
+                        h5.payed__title
+                            | 12 000 000+
+                        h5.payed__text
+                            | Registered users
+                    .payed__item
+                        h5.payed__title
+                            | 3 000 000+
+                        h5.payed__text
+                            | Number of deals on our platform
+        section.payments
+            .wrap
+                .section-title
+                    h2
+                        span.orange SIMPLE AND RELIABLE
+                    h2
+                        | WITHDRAWAL
+                .section-content
+                    .img-wrap
+                        img(src='img/3a30f0c5a9.png')
+                    .img-wrap
+                        img(src='img/4af5e28658.png')
+                    .img-wrap
+                        img(src='img/10e04027e9.png')
+                    .img-wrap
+                        img(src='img/256f0c119c.png')
+                    .img-wrap
+                        img(src='img/2346d41fee.png')
+                    .img-wrap
+                        img(src='img/b2208fb23a.png')
+        section.register
+            .wrap
+                .title
+                    h2
+                        span.orange START A SUCCESSFUL TRADER
+                    h2
+                        | CAREER 
+                        span.orange RIGHT NOW
+                    p Fast registration:
+                .reg-form
+                    form
+                        .reg-form-wrap
+                            input.email(type='email', placeholder='Your E-mail', required='')
+                            input.password(type='password', placeholder='Your Password', required='')
+                            button.reg-form-bottom-btn.btn.btn__full.btn__full--green(type='button') TRY FOR FREE
+                    p
+                        | You agree to the
+                        a(href='') Terms and Conditions
+        include includes/footer.pug
+        script(src='https://static.iqoption.com/land/start-trading/assets/scripts/common.min.js?1478610207299')
