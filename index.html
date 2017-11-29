@@ -1,13 +1,336 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>New Iq-option</title><link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css"><link href="css/style-2.css" rel="stylesheet"><link href="css/main.css" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head><body><section class="header container welcome"><div class="header-nav container"><div class="header-logo"><a href="/"><img src="img/logo.png"></a></div><div><button class="header-btn">Register</button></div></div><div class="wrap"><div class="header-start-block"><h2 class="title">START TRADING</h2><h2 class="orange title">BINARY OPTIONS</h2><h2 class="title">RIGHT NOW</h2><h3><span class="int">1</span><span class="text">Click       </span><span class="int">60</span><span class="text">Seconds       </span><span class="int">91%</span><span class="text">Profit*</span></h3><h3 class="fast-reg-h3">Fast registration:</h3><div class="header-start-form"><form><div class="input-block"><input type="email" placeholder="Your E-mail" required=""><input type="password" placeholder="Your Password" required=""></div><div class="input-block"><button class="welcome-btn btn btn__full btn__full--green btn__full--flat">TRY FOR FREE</button></div></form></div><p class="header-start-block-p">You agree to the  <a href="">Terms and Conditions</a></p></div></div><div class="welcome__overlay"></div><video class="bgvideo" id="bgvideo" autoplay="" loop="" muted=""><source src="video/platform.mp4" type="video/mp4"></video></section><section class="section trade" id="trade"><div class="wrap"><div class="section__title"><h2 class="title">HOW OUR PLATFORM WORKS</h2></div><div class="section__content"><div class="steps"><div class="steps__item"><div class="steps__num">1.</div><div class="steps__text">Determine the market direction in the near future —<span class="green">Higher</span> or<span class="red">Lower</span>, than it is now</div></div><div class="steps__item"><div class="steps__num">2.</div><div class="steps__text">Check the accuracy of your forecast and see your potential profit in seconds.</div></div></div><div class="trade__platform"><img class="trade__mockup" src="https://static.iqoption.com/land/start-trading/assets/images/mockup__macbook.png?1478610207299"><div class="traderoom"><div class="platform"><div class="platform__header"><div class="asset"><div class="currency stocksName">EUR/USD</div><div class="profit activePercent">+91%</div></div><div class="other">+</div><div class="balance"><div class="balance__count"><span class="currency">$</span><span id="balance">1000.00</span></div><div class="balance__type">practice account</div></div></div><div class="platform__chart"><div class="expiration"><span class="expiration__text">Deal expires in</span><span class="expiration__time" id="expiration"></span><span class="expiration__seconds">sec.</span></div><div class="chart" id="chart1" data-highcharts-chart="0"></div><div class="platform__warning">The features provided by this site may involve operations with high level of risk, and there is a potential for financial loss in their execution.</div></div><div class="platform__sidebar"><div class="sidebar"><div class="sidebar__block amount"><div class="sidebar__title amount__title">Amount:</div><div class="amount__input"><span class="currency">$</span><input id="amount" type="number" min="0" max="5000" value="500" name="email"></div><div class="amount__control"><div class="amount__minus" id="amount__del">-</div><div class="amount__plus" id="amount__add">+</div></div></div><div class="sidebar__block income"><div class="sidebar__title income__title">Profit:</div><div class="income__percent"><span class="activePercent" id="js-percent" data-percent="0.91">91%</span></div><div class="income__count"><span class="currency">+$</span><input id="profit" value="455.91" type="text"></div></div><div class="sidebar__block control"><button class="control__btn control__btn--call" id="btn__call" data-direct="true"><div class="control__caption"><svg class="control__icon" width="18px" height="19px"><use href="https://iqoption.com/assets/images/icon.svg#icon_icon__call"></use></svg><div class="control__text">Higher</div></div></button><button class="control__btn control__btn--put" id="btn__put" data-direct="false"><div class="control__caption"><svg class="control__icon" width="18px" height="19px"><use href="https://iqoption.com/assets/images/icon.svg#icon_icon__put"></use></svg><div class="control__text">Lower</div></div></button></div></div></div></div><div class="result" id="result"><div class="result__close">✕</div><div class="result__content"><div class="result__register"><div class="result__block"><div class="result__title">Become a trader</div><div class="result__text">Try on practice account with real charts</div><div class="result__btn"><a class="btn btn__full btn__full--orange" href="index.html#register">Start trading now!</a></div></div></div><div class="result__forecast"><div class="result__block"><div class="result__title">Start trading now!</div><div class="result__text">Your profit from investing<span class="currency">$</span><span id="result__bet"> 500</span> amounts to<span class="currency">$</span><span id="result__profit">500</span></div><div class="result__profit"><div class="result__bubble"><div class="bubble"><div class="bubble__text">Profit</div><div class="bubble__profit">$<span id="result__amount">500</span></div></div></div></div></div></div><div class="result__warning">The features provided by this site may involve operations with high level of risk, and there is a potential for financial loss in their execution.</div></div></div></div></div><div class="cta"><a class="cta__btn btn btn__full btn__full--green" href="index.html#register">Try it for free!</a><div class="apps"><div class="apps__item apps__item--appStore"><!-- <img src="../../vendor/images/app/apple/btn__apple--en-1478610207299.png" class="apps__btn apps__btn--appStore">--><!-- img.apps__btn.apps__btn--appStore(src="../assets/images/app/apple/btn__apple--en.png?" + timestamp)--></div><div class="apps__item apps__item--googlePlay"><!-- <img src="../../vendor/images/app/google/btn__google--en-1478610207299.png" class="apps__btn apps__btn--googlePlay">--><!-- img.apps__btn.apps__btn--googlePlay(src="../assets/images/app/google/btn__google--en.png?" + timestamp)--></div></div></div><div class="warning"><div class="warning__title"><span class="warning__colon">General Risk Warning:</span></div><div class="warning__text">Trading operations offered on this website can be considered High-Risk Trading Operations and their execution can be very risky. Purchasing financial instruments or utilising services offered on the website may result in significant losses or even in a total loss of all funds on your account.</div></div></div></div></section><section class="why"><div class="wrap"><div class="section__title"><h2 class="title">THAT'S WHY<span class="orange"> WE ARE THE TRADERS CHOICE</span> №1!</h2></div><div class="section__content"><div class="why-right-block"><img src="img/mockup__devices.png"></div><div class="why-left-block"><ul><li>Free<span class="green">$1,000</span> Demo Account</li><li>Best tutorial in the industry</li><li>Availability on any device</li><li>A wide range of analysis tools</li><li>More than 70 assets for trading</li><li>A simple and reliable funds withdrawal system</li></ul></div></div><div class="benefits"><div class="benefits-block"><div class="int">91% *</div><div class="text">High<br>                    yield</div></div><div class="benefits-block"><div class="int">$1</div><div class="text">Minimum<br>investment</div></div><div class="benefits-block"><div class="int">1 min</div><div class="text">Quick<br>                    deals</div></div><div class="benefits-block"><div class="int">$10</div><div class="text">Minimum<br>deposit</div></div></div><div class="why-btn-block"><button class="why-btn cta__btn btn btn__full btn__full--green">Try it for free!</button></div></div></section><section class="payed"><div class="wrap"><div class="section-title"><h3>WE HAVE PAID OUR TRADERS</h3><h3><span class="orange">$8 404 681 </span> FOR THE <span class="orange">LAST</span></h3><h3><span class="orange">MONTH</span></h3></div><div class="section-content"><div class="payed__item"><h5 class="payed__title">120</h5><h5 class="payed__text">Countries</h5></div><div class="payed__item"><h5 class="payed__title">12 000 000+</h5><h5 class="payed__text">Registered users</h5></div><div class="payed__item"><h5 class="payed__title">3 000 000+</h5><h5 class="payed__text">Number of deals on our platform</h5></div></div></div></section><section class="payments"><div class="wrap"><div class="section-title"><h2><span class="orange">SIMPLE AND RELIABLE</span></h2><h2>WITHDRAWAL</h2></div><div class="section-content"><div class="img-wrap"><img src="img/3a30f0c5a9.png"></div><div class="img-wrap"><img src="img/4af5e28658.png"></div><div class="img-wrap"><img src="img/10e04027e9.png"></div><div class="img-wrap"><img src="img/256f0c119c.png"></div><div class="img-wrap"><img src="img/2346d41fee.png"></div><div class="img-wrap"><img src="img/b2208fb23a.png"></div></div></div></section><section class="register"><div class="wrap"><div class="title"><h2><span class="orange">START A SUCCESSFUL TRADER</span></h2><h2>CAREER <span class="orange">RIGHT NOW</span></h2><p>Fast registration:</p></div><div class="reg-form"><form><div class="reg-form-wrap"><input class="email" type="email" placeholder="Your E-mail" required=""><input class="password" type="password" placeholder="Your Password" required=""><button class="reg-form-bottom-btn btn btn__full btn__full--green" type="button">TRY FOR FREE</button></div></form><p>You agree to the<a href="">Terms and Conditions</a></p></div></div></section><section class="footer-big"><div class="wrap"><div class="footer-wrapper"><div class="footer-nav"><div class="footer-nav-left"><h3>ABOUT US</h3><ul><li><a href="../html/our-business-model.html">Our Business Model</a></li><li><a href="../html/iq-option-in-figures.html">IQ Option in Figures</a></li><li><a href="../html/iq-option-in-the-press.html">IQ Option in the Press</a></li><li><a href="../html/awards.html">Awards</a></li><li><a href="../html/aston-martin-racing.html">Aston Martin Racing</a></li><li><a href="../html/contact-us.html">Contact Us</a></li></ul></div><div class="footer-nav-right"><h3>FOR TRADERS</h3><ul><li><a href="../html/assets.html">Assets</a></li><li><a href="../html/historical-quotes.html">Historical Quotes</a></li><li><a href="../html/tournaments.html">Tournaments</a></li><li><a href="../html/faq.html">FAQ</a></li></ul></div></div><div class="footer-risk"><h3>GENERAL RISK WARNING</h3><div class="risk-text-1"><p>Trading operations offered on this website can be considered High-Risk Trading Operations and
-their
-execution can be very risky. Purchasing financial instruments or utilising services offered on
-the
-website may result in significant losses or even in a total loss of all funds on your account.</p></div><div class="risk-text-2"><p>You are granted limited non-exclusive non-transferable rights to use the IP provided on this
-website
-for
-personal and non-commercial purposes in relation to the services offered on the Website only. IQ
-OPTION
-EUROPE LTD. is licensed and regulated in Cyprus, a European Economic Area (EEA) country which
-allows
-us
-to offer certain products and services to other countries.</p></div><div class="risk-text-3"><p>Amount to be credited to account in case of successful trade</p></div><div class="socials-icon"><a href="https://www.facebook.com/"><img class="fb" src="img/facebook-logo-button.svg"></a><a href="https://twitter.com/"><img class="tw" src="img/twitter-logo-button.svg"></a><a href="https://www.instagram.com/"><img class="ins" src="img/instagram-logo.svg"></a></div></div></div></div></section><section class="footer-little"><div class="wrap"><div class="footer-little-wrapper"><div class="footer-little-left"><p>© IQ Option, 2013-2016. All Rights Reserved.</p></div><div class="footer-little-right"><div class="footer-little-right-a-wrap"><a href="../html/regulation.html">Regulations</a><a href="../html/terms-and-conditions.html">Terms & Conditions</a></div></div></div></div></section><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><script src="../js/scripts.js"></script><script src="https://static.iqoption.com/land/start-trading/assets/scripts/common.min.js?1478610207299"></script></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>New Iq-option</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet"
+          type="text/css">
+    <link href="css/style-2.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<section class="header container welcome">
+    <div class="header-nav container">
+        <div class="header-logo"><a href="/"><img src="img/logo.png"></a></div>
+        <div>
+            <button class="header-btn">Register</button>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="header-start-block"><h2 class="title">START TRADING</h2>
+            <h2 class="orange title">BINARY OPTIONS</h2>
+            <h2 class="title">RIGHT NOW</h2>
+            <h3><span class="int">1</span><span class="text">Click       </span><span class="int">60</span><span
+                    class="text">Seconds       </span><span class="int">91%</span><span class="text">Profit*</span></h3>
+            <h3 class="fast-reg-h3">Fast registration:</h3>
+            <div class="header-start-form">
+                <form>
+                    <div class="input-block"><input type="email" placeholder="Your E-mail" required=""><input
+                            type="password" placeholder="Your Password" required=""></div>
+                    <div class="input-block">
+                        <button class="welcome-btn btn btn__full btn__full--green btn__full--flat">TRY FOR FREE</button>
+                    </div>
+                </form>
+            </div>
+            <p class="header-start-block-p">You agree to the  <a href="">Terms and Conditions</a></p></div>
+    </div>
+    <div class="welcome__overlay"></div>
+    <video class="bgvideo" id="bgvideo" autoplay="" loop="" muted="">
+        <source src="video/platform.mp4" type="video/mp4">
+    </video>
+</section>
+<section class="section trade" id="trade">
+    <div class="wrap">
+        <div class="section__title"><h2 class="title">HOW OUR PLATFORM WORKS</h2></div>
+        <div class="section__content">
+            <div class="steps">
+                <div class="steps__item">
+                    <div class="steps__num">1.</div>
+                    <div class="steps__text">Determine the market direction in the near future —<span class="green">Higher</span>
+                        or<span class="red">Lower</span>, than it is now
+                    </div>
+                </div>
+                <div class="steps__item">
+                    <div class="steps__num">2.</div>
+                    <div class="steps__text">Check the accuracy of your forecast and see your potential profit in
+                        seconds.
+                    </div>
+                </div>
+            </div>
+            <div class="trade__platform"><img class="trade__mockup"
+                                              src="https://static.iqoption.com/land/start-trading/assets/images/mockup__macbook.png?1478610207299">
+                <div class="traderoom">
+                    <div class="platform">
+                        <div class="platform__header">
+                            <div class="asset">
+                                <div class="currency stocksName">EUR/USD</div>
+                                <div class="profit activePercent">+91%</div>
+                            </div>
+                            <div class="other">+</div>
+                            <div class="balance">
+                                <div class="balance__count"><span class="currency">$</span><span
+                                        id="balance">1000.00</span></div>
+                                <div class="balance__type">practice account</div>
+                            </div>
+                        </div>
+                        <div class="platform__chart">
+                            <div class="expiration"><span class="expiration__text">Deal expires in</span><span
+                                    class="expiration__time" id="expiration"></span><span class="expiration__seconds">sec.</span>
+                            </div>
+                            <div class="chart" id="chart1" data-highcharts-chart="0"></div>
+                            <div class="platform__warning">The features provided by this site may involve operations
+                                with high level of risk, and there is a potential for financial loss in their execution.
+                            </div>
+                        </div>
+                        <div class="platform__sidebar">
+                            <div class="sidebar">
+                                <div class="sidebar__block amount">
+                                    <div class="sidebar__title amount__title">Amount:</div>
+                                    <div class="amount__input"><span class="currency">$</span><input id="amount"
+                                                                                                     type="number"
+                                                                                                     min="0" max="5000"
+                                                                                                     value="500"
+                                                                                                     name="email"></div>
+                                    <div class="amount__control">
+                                        <div class="amount__minus" id="amount__del">-</div>
+                                        <div class="amount__plus" id="amount__add">+</div>
+                                    </div>
+                                </div>
+                                <div class="sidebar__block income">
+                                    <div class="sidebar__title income__title">Profit:</div>
+                                    <div class="income__percent"><span class="activePercent" id="js-percent"
+                                                                       data-percent="0.91">91%</span></div>
+                                    <div class="income__count"><span class="currency">+$</span><input id="profit"
+                                                                                                      value="455.91"
+                                                                                                      type="text"></div>
+                                </div>
+                                <div class="sidebar__block control">
+                                    <button class="control__btn control__btn--call" id="btn__call" data-direct="true">
+                                        <div class="control__caption">
+                                            <svg class="control__icon" width="18px" height="19px">
+                                                <use href="https://iqoption.com/assets/images/icon.svg#icon_icon__call"></use>
+                                            </svg>
+                                            <div class="control__text">Higher</div>
+                                        </div>
+                                    </button>
+                                    <button class="control__btn control__btn--put" id="btn__put" data-direct="false">
+                                        <div class="control__caption">
+                                            <svg class="control__icon" width="18px" height="19px">
+                                                <use href="https://iqoption.com/assets/images/icon.svg#icon_icon__put"></use>
+                                            </svg>
+                                            <div class="control__text">Lower</div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result" id="result">
+                        <div class="result__close">✕</div>
+                        <div class="result__content">
+                            <div class="result__register">
+                                <div class="result__block">
+                                    <div class="result__title">Become a trader</div>
+                                    <div class="result__text">Try on practice account with real charts</div>
+                                    <div class="result__btn"><a class="btn btn__full btn__full--orange"
+                                                                href="index.html#register">Start trading now!</a></div>
+                                </div>
+                            </div>
+                            <div class="result__forecast">
+                                <div class="result__block">
+                                    <div class="result__title">Start trading now!</div>
+                                    <div class="result__text">Your profit from investing<span
+                                            class="currency">$</span><span id="result__bet"> 500</span> amounts to<span
+                                            class="currency">$</span><span id="result__profit">500</span></div>
+                                    <div class="result__profit">
+                                        <div class="result__bubble">
+                                            <div class="bubble">
+                                                <div class="bubble__text">Profit</div>
+                                                <div class="bubble__profit">$<span id="result__amount">500</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result__warning">The features provided by this site may involve operations with
+                                high level of risk, and there is a potential for financial loss in their execution.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cta"><a class="cta__btn btn btn__full btn__full--green" href="index.html#register">Try it for
+                free!</a>
+                <div class="apps">
+                    <div class="apps__item apps__item--appStore">
+                        <!-- <img src="../../vendor/images/app/apple/btn__apple--en-1478610207299.png" class="apps__btn apps__btn--appStore">-->
+                        <!-- img.apps__btn.apps__btn--appStore(src="../assets/images/app/apple/btn__apple--en.png?" + timestamp)--></div>
+                    <div class="apps__item apps__item--googlePlay">
+                        <!-- <img src="../../vendor/images/app/google/btn__google--en-1478610207299.png" class="apps__btn apps__btn--googlePlay">-->
+                        <!-- img.apps__btn.apps__btn--googlePlay(src="../assets/images/app/google/btn__google--en.png?" + timestamp)--></div>
+                </div>
+            </div>
+            <div class="warning">
+                <div class="warning__title"><span class="warning__colon">General Risk Warning:</span></div>
+                <div class="warning__text">Trading operations offered on this website can be considered High-Risk
+                    Trading Operations and their execution can be very risky. Purchasing financial instruments or
+                    utilising services offered on the website may result in significant losses or even in a total loss
+                    of all funds on your account.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="why">
+    <div class="wrap">
+        <div class="section__title"><h2 class="title">THAT'S WHY<span class="orange"> WE ARE THE TRADERS CHOICE</span>
+            №1!</h2></div>
+        <div class="section__content">
+            <div class="why-right-block"><img src="img/mockup__devices.png"></div>
+            <div class="why-left-block">
+                <ul>
+                    <li>Free<span class="green">$1,000</span> Demo Account</li>
+                    <li>Best tutorial in the industry</li>
+                    <li>Availability on any device</li>
+                    <li>A wide range of analysis tools</li>
+                    <li>More than 70 assets for trading</li>
+                    <li>A simple and reliable funds withdrawal system</li>
+                </ul>
+            </div>
+        </div>
+        <div class="benefits">
+            <div class="benefits-block">
+                <div class="int">91% *</div>
+                <div class="text">High<br> yield</div>
+            </div>
+            <div class="benefits-block">
+                <div class="int">$1</div>
+                <div class="text">Minimum<br>investment</div>
+            </div>
+            <div class="benefits-block">
+                <div class="int">1 min</div>
+                <div class="text">Quick<br> deals</div>
+            </div>
+            <div class="benefits-block">
+                <div class="int">$10</div>
+                <div class="text">Minimum<br>deposit</div>
+            </div>
+        </div>
+        <div class="why-btn-block">
+            <button class="why-btn cta__btn btn btn__full btn__full--green">Try it for free!</button>
+        </div>
+    </div>
+</section>
+<section class="payed">
+    <div class="wrap">
+        <div class="section-title"><h3>WE HAVE PAID OUR TRADERS</h3>
+            <h3><span class="orange">$8 404 681 </span> FOR THE <span class="orange">LAST</span></h3>
+            <h3><span class="orange">MONTH</span></h3></div>
+        <div class="section-content">
+            <div class="payed__item"><h5 class="payed__title">120</h5><h5 class="payed__text">Countries</h5></div>
+            <div class="payed__item"><h5 class="payed__title">12 000 000+</h5><h5 class="payed__text">Registered
+                users</h5></div>
+            <div class="payed__item"><h5 class="payed__title">3 000 000+</h5><h5 class="payed__text">Number of deals on
+                our platform</h5></div>
+        </div>
+    </div>
+</section>
+<section class="payments">
+    <div class="wrap">
+        <div class="section-title"><h2><span class="orange">SIMPLE AND RELIABLE</span></h2>
+            <h2>WITHDRAWAL</h2></div>
+        <div class="section-content">
+            <div class="img-wrap"><img src="img/3a30f0c5a9.png"></div>
+            <div class="img-wrap"><img src="img/4af5e28658.png"></div>
+            <div class="img-wrap"><img src="img/10e04027e9.png"></div>
+            <div class="img-wrap"><img src="img/256f0c119c.png"></div>
+            <div class="img-wrap"><img src="img/2346d41fee.png"></div>
+            <div class="img-wrap"><img src="img/b2208fb23a.png"></div>
+        </div>
+    </div>
+</section>
+<section class="register">
+    <div class="wrap">
+        <div class="title"><h2><span class="orange">START A SUCCESSFUL TRADER</span></h2>
+            <h2>CAREER <span class="orange">RIGHT NOW</span></h2>
+            <p>Fast registration:</p></div>
+        <div class="reg-form">
+            <form>
+                <div class="reg-form-wrap"><input class="email" type="email" placeholder="Your E-mail"
+                                                  required=""><input class="password" type="password"
+                                                                     placeholder="Your Password" required="">
+                    <button class="reg-form-bottom-btn btn btn__full btn__full--green" type="button">TRY FOR FREE
+                    </button>
+                </div>
+            </form>
+            <p>You agree to the<a href="">Terms and Conditions</a></p></div>
+    </div>
+</section>
+<section class="footer-big">
+    <div class="wrap">
+        <div class="footer-wrapper">
+            <div class="footer-nav">
+                <div class="footer-nav-left"><h3>ABOUT US</h3>
+                    <ul>
+                        <li><a href="../html/our-business-model.html">Our Business Model</a></li>
+                        <li><a href="../html/iq-option-in-figures.html">IQ Option in Figures</a></li>
+                        <li><a href="../html/iq-option-in-the-press.html">IQ Option in the Press</a></li>
+                        <li><a href="../html/awards.html">Awards</a></li>
+                        <li><a href="../html/aston-martin-racing.html">Aston Martin Racing</a></li>
+                        <li><a href="../html/contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-right"><h3>FOR TRADERS</h3>
+                    <ul>
+                        <li><a href="../html/assets.html">Assets</a></li>
+                        <li><a href="../html/historical-quotes.html">Historical Quotes</a></li>
+                        <li><a href="../html/tournaments.html">Tournaments</a></li>
+                        <li><a href="../html/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-risk"><h3>GENERAL RISK WARNING</h3>
+                <div class="risk-text-1"><p>Trading operations offered on this website can be considered High-Risk
+                    Trading Operations and
+                    their
+                    execution can be very risky. Purchasing financial instruments or utilising services offered on
+                    the
+                    website may result in significant losses or even in a total loss of all funds on your account.</p>
+                </div>
+                <div class="risk-text-2"><p>You are granted limited non-exclusive non-transferable rights to use the IP
+                    provided on this
+                    website
+                    for
+                    personal and non-commercial purposes in relation to the services offered on the Website only. IQ
+                    OPTION
+                    EUROPE LTD. is licensed and regulated in Cyprus, a European Economic Area (EEA) country which
+                    allows
+                    us
+                    to offer certain products and services to other countries.</p></div>
+                <div class="risk-text-3"><p>Amount to be credited to account in case of successful trade</p></div>
+                <div class="socials-icon"><a href="https://www.facebook.com/"><img class="fb"
+                                                                                   src="img/facebook-logo-button.svg"></a><a
+                        href="https://twitter.com/"><img class="tw" src="img/twitter-logo-button.svg"></a><a
+                        href="https://www.instagram.com/"><img class="ins" src="img/instagram-logo.svg"></a></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer-little">
+    <div class="wrap">
+        <div class="footer-little-wrapper">
+            <div class="footer-little-left"><p>© IQ Option, 2013-2016. All Rights Reserved.</p></div>
+            <div class="footer-little-right">
+                <div class="footer-little-right-a-wrap"><a href="../html/regulation.html">Regulations</a><a
+                        href="../html/terms-and-conditions.html">Terms & Conditions</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="https://static.iqoption.com/land/trade-binary-options-demo-v2/assets/scripts/common.min.js?1510601592584"></script>
+</body>
+</html>
